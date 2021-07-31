@@ -42,6 +42,27 @@ while iterator is not None:
     iterator = iterator.next
     
     
+"""
+* 링크드 리스트 __str__ 메소드 사용
+:링크드 리스트를 출력할 때 자동으로 링크드 리스트의 내용을 사람들이 이해할 수 있는 문자열로 리턴해주는 메소드
+
+def __str__(self):
+    # 링크드 리스트를 문자열로 표현해서 리턴하는 메소드
+    res_str = "|"
+
+    # 링크드  리스트 안에 모든 노드를 돌기 위한 변수. 일단 가장 앞 노드로 정의한다.
+    iterator = self.head
+
+    # 링크드  리스트 끝까지 돈다
+    while iterator is not None:
+        # 각 노드의 데이터를 리턴하는 문자열에 더해준다
+        res_str += f" {iterator.data} |"
+        iterator = iterator.next  # 다음 노드로 넘어간다
+
+    return res_str
+"""
+    
+    
     
 출력결과
 2
