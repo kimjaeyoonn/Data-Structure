@@ -36,18 +36,18 @@ class LinkedList:
     def delete(self, node_to_delete):    # 주요 메소드 ! (이해가 너무 어렵다. 다시 볼 것.)
         data = node_to_delete.data
 
-        if node_to_delete.prev is None and node_to_delete.next is None:
+        if node_to_delete.prev is None and node_to_delete.next is None:    # 마지막 남은 노드 삭제
             self.head = None
             self.tail = None
-        elif node_to_delete is self.head:
+        elif node_to_delete is self.head:   # head 노드 삭제
             self.head = node_to_delete.next
             node_to_delete.next.prev = None
-        elif self.tail is node_to_delete:
+        elif self.tail is node_to_delete:    # tail 노드 삭제
             self.tail = node_to_delete.prev
             node_to_delete.prev.next = None
-        else:
-            node_to_delete.prev.next = node_to_delete.next
-            node_to_delete.next.prev = node_to_delete.prev
+        else:    # 두 노드 사이의 노드를 삭제
+            node_to_delete.prev.next = node_to_delete.next    # node_to_delete의 전 노드의 다음 노드가 node_to_delete의 다음 노드를 가르키게 함.
+            node_to_delete.next.prev = node_to_delete.prev    # node_to_delete의 다음 노드의 전 노드가 node_to_delete의 전 노드를 가르키게 함.
 
         return data
             
