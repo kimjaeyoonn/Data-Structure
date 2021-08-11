@@ -49,3 +49,11 @@ center.add_complaint("김현승", "hyunseung@codeit.ca", "방을 교체해주세
 # 문의를 처리한다
 center.process_complaint()
 center.process_complaint()
+
+
+
+출력예시
+강영훈님의 음식이 너무 맛이 없어요 문의 내용 접수 되었습니다. 담당자가 배정되면 younghoon@codeit.com로 연락드리겠습니다!
+더 이상 대기 중인 문의가 없습니다!
+이윤수님의 에어컨이 안 들어와요... 문의 내용 접수 되었습니다. 담당자가 배정되면 yoonsoo@codeit.kr로 연락드리겠습니다!
+손동욱님의 결제가 제대로 안 되는 거 같군요 문의 내용 접수 되었습니다. 담당자가 배정되면 dongwook@codeit.us로 연락드리겠습니다!
